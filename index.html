@@ -17,6 +17,10 @@
     <meta name="twitter:description" content="Get access to exclusive betting orders with high odds. Pay to unlock detailed predictions and maximize your winning potential.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
     
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3019380862508422"
+     crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -170,6 +174,56 @@
             margin-bottom: 3rem;
             color: var(--primary);
             font-size: 2rem;
+        }
+        
+        /* Ad Containers */
+        .ad-container {
+            margin: 2rem 0;
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .ad-leaderboard {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+            border: 1px dashed #ddd;
+            margin: 20px 0;
+        }
+        
+        .ad-banner {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+            border: 1px dashed #ddd;
+            margin: 25px 0;
+        }
+        
+        .ad-square {
+            width: 300px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+            border: 1px dashed #ddd;
+            margin: 20px auto;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+            margin-top: 5px;
         }
         
         /* Betting Types Section */
@@ -615,6 +669,8 @@
             
             nav ul {
                 gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
             .hero h2 {
@@ -646,11 +702,95 @@
                 left: 10px;
                 bottom: 10px;
             }
+            
+            .ad-banner {
+                height: 150px;
+            }
+            
+            .ad-square {
+                width: 250px;
+                height: 200px;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .betting-types {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
         }
         
         @media (max-width: 480px) {
             .testimonial-popup {
                 max-width: 200px;
+            }
+            
+            .ad-banner {
+                height: 120px;
+            }
+            
+            .ad-square {
+                width: 200px;
+                height: 150px;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 10px;
+            }
+            
+            nav a {
+                padding: 5px 8px;
+                font-size: 0.9rem;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .payment-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .logo h1 {
+                font-size: 1.3rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .betting-card {
+                margin: 0 10px;
             }
         }
     </style>
@@ -689,6 +829,23 @@
         </div>
 
         <div class="container">
+            <!-- Ad Banner -->
+            <div class="ad-container">
+                <div class="ad-banner">
+                    <!-- Google AdSense Banner Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
+
             <!-- Betting Types Preview -->
             <h2 class="section-title">Available Betting Orders</h2>
             <div class="betting-types scrollable-section">
@@ -746,6 +903,23 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Ad Square -->
+            <div class="ad-container">
+                <div class="ad-square">
+                    <!-- Google AdSense Square Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="0987654321"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
         </div>
     </section>
 
@@ -753,6 +927,23 @@
     <section id="multibet" class="page">
         <div class="container">
             <h2 class="section-title">Multibet (6 Games)</h2>
+            
+            <!-- Ad Leaderboard -->
+            <div class="ad-container">
+                <div class="ad-leaderboard">
+                    <!-- Google AdSense Leaderboard Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
             
             <div class="betting-details scrollable-section">
                 <h3>Game Predictions</h3>
@@ -801,6 +992,23 @@
         <div class="container">
             <h2 class="section-title">Correct Scores (2 Games)</h2>
             
+            <!-- Ad Leaderboard -->
+            <div class="ad-container">
+                <div class="ad-leaderboard">
+                    <!-- Google AdSense Leaderboard Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
+            
             <div class="betting-details scrollable-section">
                 <h3>Score Predictions</h3>
                 <p>These precise score predictions are locked until payment is made. Make payment to unlock the full details.</p>
@@ -831,6 +1039,23 @@
     <section id="half-full" class="page">
         <div class="container">
             <h2 class="section-title">Half/Full Time (3 Games)</h2>
+            
+            <!-- Ad Leaderboard -->
+            <div class="ad-container">
+                <div class="ad-leaderboard">
+                    <!-- Google AdSense Leaderboard Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
             
             <div class="betting-details scrollable-section">
                 <h3>Half/Full Time Predictions</h3>
@@ -866,6 +1091,23 @@
     <section id="payment" class="page">
         <div class="container">
             <h2 class="section-title">Payment Information</h2>
+            
+            <!-- Ad Banner -->
+            <div class="ad-container">
+                <div class="ad-banner">
+                    <!-- Google AdSense Banner Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
             
             <div class="payment-section scrollable-section">
                 <p>To access our premium betting orders, make payment to the following details:</p>
@@ -928,6 +1170,23 @@
                 </div>
             </div>
             
+            <!-- Ad Leaderboard in Footer -->
+            <div class="ad-container">
+                <div class="ad-leaderboard">
+                    <!-- Google AdSense Footer Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3019380862508422"
+                         data-ad-slot="5566778899"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="ad-label">Advertisement</div>
+            </div>
+            
             <div class="copyright">
                 <p>&copy; 2023 PREMIUM VIP TIPS. All rights reserved.</p>
             </div>
@@ -978,7 +1237,7 @@
     <div id="testimonialContainer"></div>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/254715992225?text=Hello%20PREMIUM%20VIP%20TIPS,%20I%20would%20like%20to%20inquire%20about%20your%20betting%20orders" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/254710918526?text=Hello%20PREMIUM%20VIP%20TIPS,%20I%20would%20like%20to%20inquire%20about%20your%20betting%20orders" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -1270,7 +1529,7 @@
             // Redirect to WhatsApp with pre-filled message including bet type
             const whatsappMessage = `Hello PREMIUM VIP TIPS, I have made payment for ${selectedBetType}.\n\nBet Type: ${selectedBetType}\nAmount: Ksh ${amount}\nTransaction Code: ${transactionCode}\n\nM-Pesa Message: ${mpesaMessage}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            window.open(`https://wa.me/254715992225?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/254710918526?text=${encodedMessage}`, '_blank');
             
             modal.style.display = 'none';
             paymentForm.reset();
@@ -1298,5 +1557,4 @@
         });
     </script>
 </body>
-
 </html>
